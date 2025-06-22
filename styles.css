@@ -1,0 +1,54 @@
+body{
+    text-align: center;
+    display: block;
+    margin: 8px;
+    background-color: rgb(2, 29, 37);
+    font-family: monospace;
+}
+h1{
+    color: lightgrey;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: lightgray;
+}
+table{
+    display: table;
+    margin: 0 auto;
+    border: 2px solid white;
+    box-sizing: border-box;
+    width: 650px;
+    color: white;
+}
+tr{
+    
+}
+th{
+    border: 1px solid white;
+}
+td{
+    text-align: justify;
+}
+.content{
+    position: relative;
+    background: url("https://th.bing.com/th/id/R.1126f5830419f0a8b95ff243365677fd?rik=xz8EH5S3wac33A&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f9%2f4%2fd%2f358396.jpg&ehk=ZBuvEv4yGCoQiCpKiIdFFpXlc4LDfvKiMxdw6Hbv%2bVo%3d&risl=&pid=ImgRaw&r=0") center center no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+    z-index: 0;
+}
+.content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    pointer-events: none;
+}
+.content *{
+    position: relative;
+    z-index: 2;
+}
